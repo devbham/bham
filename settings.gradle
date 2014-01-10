@@ -1,0 +1,3 @@
+rootProject.name = 'bham'
+
+include 'client', 'service', 'visanalytics'

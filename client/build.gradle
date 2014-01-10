@@ -1,0 +1,55 @@
+
+import com.fei.systems.client.GruntTask
+
+task npmInstall(
+				type: Exec,
+				group:"Grunt",
+				description:"Installs all Node.js dependencies defined in package.json") {
+	
+	commandLine = ["npm.cmd", "install"]
+	inputs.file "package.json"
+	outputs.dir "node_modules"
+}
+						
+task unitTest(
+			type: GruntTask,
+			group: 'Grunt',
+			description: 'Runs unit testing with Karma') {
+
+	gruntArgs = "unitTest"
+}
+
+task integrationTest(
+	type: GruntTask,
+	group: 'Grunt',
+	description: 'Runs integration testing with Protractor') {
+
+	gruntArgs = "integrationTest"
+}
+	
+task concatAndMinify(
+					type: GruntTask,
+					group: 'Grunt',
+					description: 'Concat and minify JS files') {
+	
+	gruntArgs = "concatAndMinify"
+}
+
+task staticCodeAnalysis(
+	type: GruntTask,
+	group: 'Grunt',
+	description: 'Static code analysis with JSHint') {
+
+	gruntArgs = "staticCodeAnalysis"
+}
+	
+task jenkins(
+			type: GruntTask,
+			group: 'Grunt',
+			description: 'Runs all the tasks') {
+				
+	gruntArgs = "jenkins"
+}
+			
+
+	
