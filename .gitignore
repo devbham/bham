@@ -1,6 +1,29 @@
-/build
-.project
-client/.project
-visanalytics/.project
+# Eclipse Artifacts #
 .settings
-visanalytics/.settings
+.project
+.classpath
+.metadata
+.springBeans
+# WebStorm/IntelliJ IDEA Artifacts #
+.idea
+#Npm modules
+client/node_modules
+# Gradle Artifacts #
+.gradle
+build
+# Grunt Artifacts #
+dist
+# Generated Artifacts #
+bin
+*.class
+*.log
+# Package Files #
+*.jar
+*.war
+*.ear
+# Others #
+*.roo
+*.tmp
+*.zip
+*.DS_Store
+
