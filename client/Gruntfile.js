@@ -24,22 +24,22 @@ module.exports = function(grunt) {
       }
     },
 
-      karma: {
-
-          dev: {
-              configFile: 'test/config/karma.conf.js',
-              autoWatch: true
-          },
-
-          continuous: {
-            singleRun: true,
-            configFile: 'test/config/karma.conf.js',
-            reporters: ['dots', 'junit'],
-                  junitReporter: {
-                  outputFile: 'test-results.xml'
-              }
-          }
-      },
+	  karma: {
+	
+	      dev: {
+	          configFile: 'test/config/karma.conf.js',
+	          autoWatch: true
+	      },
+	
+	      continuous: {
+	        singleRun: true,
+	        configFile: 'test/config/karma.conf.js',
+	        reporters: ['dots', 'junit'],
+	              junitReporter: {
+	              outputFile: '../test-results.xml'
+	          }
+	      }
+	  },
     protractor: {
           options: {
               configFile: "node_modules/protractor/referenceConf.js", // Default config file
