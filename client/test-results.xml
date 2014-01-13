@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2014-01-13T19:44:29" id="0" hostname="TomsonNgassaPC" tests="0" errors="1" failures="0" time="0">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"/>
+    </properties>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>

@@ -1,18 +1,19 @@
 module.exports = function (config) {
+    'use strict';
     config.set({
         basePath: '../',
 
         files: [
-            'app/lib/angular/angular.js',
-            'app/lib/angular/angular-*.js',
-            'app/js/**/*.js',
-            'test/unit/**/*.js'
+            '../vendor/angular/angular.js',
+            '../vendor/angular/angular-*.js',
+            '../src/app/*.js',
+            'unit/*.js'
         ],
 
         exclude: [
-            'app/lib/angular/angular-loader.js',
-            'app/lib/angular/*.min.js',
-            'app/lib/angular/angular-scenario.js'
+            '../vendor/angular/angular-loader.js',
+            '../vendor/angular/*.min.js',
+            '../vendor/angular/angular-scenario.js'
         ],
 
         autoWatch: true,

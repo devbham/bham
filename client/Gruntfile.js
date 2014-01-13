@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['app/js/*.js'],
+        src: ['src/app/*.js'],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
@@ -27,13 +27,13 @@ module.exports = function(grunt) {
       karma: {
 
           dev: {
-              configFile: 'config/karma.conf.js',
+              configFile: 'test/config/karma.conf.js',
               autoWatch: true
           },
 
           continuous: {
             singleRun: true,
-            configFile: 'config/karma.conf.js',
+            configFile: 'test/config/karma.conf.js',
             reporters: ['dots', 'junit'],
                   junitReporter: {
                   outputFile: 'test-results.xml'
@@ -51,14 +51,14 @@ module.exports = function(grunt) {
           },
           e2e: {
               options: {
-                  configFile: "config/protractor.conf.js", // Target-specific config file
+                  configFile: "test/config/protractor.conf.js", // Target-specific config file
                   args: {} // Target-specific arguments
               }
           }
     },
 
     jshint: {
-      files: ['Gruntfile.js', 'app/js/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'src/app/*.js', 'test/**/*.js'],
       options: {
         // options here to override JSHint defaults
         //Specify which option to turn off or on
