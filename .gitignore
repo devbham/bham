@@ -12,7 +12,7 @@ client/node_modules
 .gradle
 build
 # Grunt Artifacts #
-dist
+client/dist
 # Generated Artifacts #
 bin
 *.class
@@ -26,4 +26,5 @@ bin
 *.tmp
 *.zip
 *.DS_Store
-
+# Gradle plugin
+buildsrc/build
